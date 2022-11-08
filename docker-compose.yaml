@@ -3,9 +3,9 @@ version: "3"
 services:
   database:
     image: mongo
-    container_name: polls_for_devs_server_mongo
+    container_name: atv_final_flutter_server_mongo
     hostname: mongodb
     ports:
       - 27017:27017
     volumes:
-      - ./.docker/polls_for_devs_server_mongo:/data/db
+      - ./.docker/atv_final_flutter_server_mongo:/data/db
