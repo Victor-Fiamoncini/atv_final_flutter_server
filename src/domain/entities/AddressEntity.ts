@@ -1,10 +1,10 @@
 export class AddressEntity {
   constructor(
-    private readonly street: string,
-    private readonly neighborhood: string,
-    private readonly city: string,
-    private readonly state: string,
-    private readonly country: string,
-    private readonly postalCode: string
+    readonly street: string,
+    readonly neighborhood: string,
+    readonly city: string,
+    readonly state: string,
+    readonly country: string,
+    readonly postalCode: string
   ) {}
 }

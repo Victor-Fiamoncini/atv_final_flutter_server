@@ -1,10 +1,10 @@
 export class WeatherEntity {
   constructor(
-    private readonly maxTemperature: number,
-    private readonly minTemperature: number,
-    private readonly mainTemperature: number,
-    private readonly humidity: number,
-    private readonly clouds: number,
-    private readonly windSpeed: number
+    readonly maxTemperature: number,
+    readonly minTemperature: number,
+    readonly mainTemperature: number,
+    readonly humidity: number,
+    readonly clouds: number,
+    readonly windSpeed: number
   ) {}
 }
