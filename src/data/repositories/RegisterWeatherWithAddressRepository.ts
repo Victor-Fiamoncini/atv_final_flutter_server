@@ -8,6 +8,6 @@ export namespace RegisterWeatherWithAddressRepository {
   }
 
   export interface Repository {
-    insertOne(params: Params): Promise<void>
+    insertOne(params: Params): Promise<boolean>
   }
 }
