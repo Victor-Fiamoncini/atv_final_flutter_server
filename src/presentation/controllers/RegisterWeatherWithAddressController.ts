@@ -33,7 +33,7 @@ export class RegisterWeatherWithAddressController implements Controller {
 
       return created()
     } catch (err) {
-      serverError(err)
+      return serverError(err)
     }
   }
 }

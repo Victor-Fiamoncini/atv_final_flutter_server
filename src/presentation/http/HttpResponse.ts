@@ -2,7 +2,7 @@ import { ServerError } from 'src/presentation/errors/ServerError'
 
 export interface HttpResponse {
   statusCode: 201 | 500
-  body: any
+  body?: any
 }
 
 export const created = (data?: any): HttpResponse => ({ statusCode: 201, body: data })
