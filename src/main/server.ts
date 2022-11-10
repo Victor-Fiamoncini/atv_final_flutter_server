@@ -1,3 +1,4 @@
+import cors from 'cors'
 import express, { Express } from 'express'
 import helmet from 'helmet'
 import morgan from 'morgan'
@@ -27,6 +28,7 @@ const initApp = async () => {
     const app = express()
 
     app.use(helmet())
+    app.use(cors())
     app.use(express.json())
     app.use(morgan('dev'))
 
