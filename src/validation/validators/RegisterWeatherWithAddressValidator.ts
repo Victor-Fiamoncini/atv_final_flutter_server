@@ -16,6 +16,7 @@ export class RegisterWeatherWithAddressValidator implements ObjectValidator {
       maxTemperature: Yup.number().nullable().typeError('Invalid max temperature'),
       minTemperature: Yup.number().nullable().typeError('Invalid min temperature'),
       mainTemperature: Yup.number().nullable().typeError('Invalid temperature'),
+      feelsLike: Yup.number().nullable().typeError('Invalid feels like temperature'),
       humidity: Yup.number().nullable().typeError('Invalid humidity'),
       clouds: Yup.number().nullable().typeError('Invalid clouds'),
       windSpeed: Yup.number().nullable().typeError('Invalid wind speed'),

@@ -17,25 +17,23 @@ export class RegisterWeatherWithAddressController implements Controller {
 
       await this.registerWeatherWithAddressValidator.validate(body)
 
-      const { street, neighborhood, city, state, country, postalCode } = body.address
-      const { maxTemperature, minTemperature, mainTemperature, humidity, clouds, windSpeed } = body.weather
-
       await this.registerWeatherWithAddressUseCase.registerWeatherAndAddress({
         address: {
-          street,
-          neighborhood,
-          city,
-          state,
-          country,
-          postalCode,
+          street: body?.address?.street,
+          neighborhood: body?.address?.neighborhood,
+          city: body?.address?.city,
+          state: body?.address?.state,
+          country: body?.address?.country,
+          postalCode: body?.address?.postalCode,
         },
         weather: {
-          maxTemperature,
-          minTemperature,
-          mainTemperature,
-          humidity,
-          clouds,
-          windSpeed,
+          maxTemperature: body?.weather?.maxTemperature,
+          minTemperature: body?.weather?.minTemperature,
+          mainTemperature: body?.weather?.mainTemperature,
+          feelsLike: body?.weather?.feelsLike,
+          humidity: body?.weather?.humidity,
+          clouds: body?.weather?.clouds,
+          windSpeed: body?.weather?.windSpeed,
         },
       })
 
