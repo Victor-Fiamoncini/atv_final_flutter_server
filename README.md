@@ -10,6 +10,7 @@ Backend feito para armazenar os dados vindos do aplicativo de previsões, feito 
 - Docker compose >= 1.29.2
 - NodeJS >= 14.18.3
 - NPM >= 6.14.15
+- Crie um arquivo `.env.local` na raiz do projeto. Baseado no `.env.example` preencha as variáveis de ambiente se quiser (já deixei elas preenchidas com o que irá precisar, a porta do servidor localhost e a URL do MongoDB).
 
 ## Como iniciar
 
